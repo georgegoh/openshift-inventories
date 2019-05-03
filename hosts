@@ -1,5 +1,5 @@
 #
-# ansible inventory for OpenShift Container Platform  3.11.43
+# ansible inventory for OpenShift Container Platform  3.11.59
 # AgnosticD ansible-config: ocp-ha-lab
 
 [OSEv3:vars]
@@ -24,9 +24,9 @@ openshift_disable_check="disk_availability,memory_availability,docker_image_avai
 # If openshift_image_tag is set, its value is used for all hosts in system container environments, even those that have another version installed. If
 # Use this variable to specify a container image tag to install or configure.
 #openshift_pkg_version is set, its value is used for all hosts in RPM-based environments, even those that have another version installed.
-openshift_image_tag=v3.11.43
+openshift_image_tag=v3.11.59
 # Use this variable to specify an RPM version to install or configure.
-openshift_pkg_version=-3.11.43
+openshift_pkg_version=-3.11.59
 openshift_release="3.11"
 
 
@@ -280,8 +280,6 @@ infranode2.2652.internal openshift_node_group_name='node-config-infra' openshift
 node1.2652.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
 node2.2652.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
 node3.2652.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
-node4.2652.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
-
 
 [nfs]
 support1.2652.internal
